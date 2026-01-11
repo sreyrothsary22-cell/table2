@@ -1,0 +1,40 @@
+.child{
+    display: flex;
+    border: 2px solid;
+    background-color: darkgoldenrod;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.parent{
+    display: grid;
+    width: 800px;
+    grid-template-columns: 200px 400px 200px;
+    grid-template-rows: 200px 400px 200px;
+    grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+}
+
+.child1{
+    grid-area: header;
+}
+
+.child2{
+    grid-area: nav;
+}
+
+.child3{
+    grid-area: article;
+}
+
+.child4{
+    grid-area: ads;
+}
+
+.child5{
+    grid-area: footer;
+}
